@@ -1,0 +1,45 @@
+<System name="Date">
+ <!--  Version: $Revision$ $Date$  -->
+<Function name="find-nextDate">
+ <!--
+ 
+         Nextdate function :
+		Input:  month, day, year representing a date with 1 <= month <= 12,  1 <= day <= 31, year >= 0
+		Output: date of the day after the input date
+      
+-->
+<Input type="arg">
+<VarSet name="Year">
+<Var name="range">
+<Value name="lessThanZero" failure="true"/>
+<Value name="ZeroorMore"/>
+</Var>
+<Var name="leap-characteristic">
+<Value name="leap-year" when="isFeb"/>
+<Value name="non-leap-year"/>
+</Var>
+<Var name="century-characteristic">
+<Value name="century-year"/>
+<Value name="non-century-year"/>
+</Var>
+</VarSet>
+<Var name="Month">
+<Value name="thirtyDays"/>
+<Value name="thirtyOneDaysNotDecember"/>
+<Value name="February" property ="isFeb"/>
+<Value name="December" when="day31"/>
+<Value name="lessThanOne" failure="true"/>
+<Value name="moreThanTwelve" failure="true"/>
+</Var>
+<Var name="Day">
+<Value name="betweenOneTwentySeven"/>
+<Value name="28" when="isFeb"/>
+<Value name="29"/>
+<Value name="30"/>
+<Value name="31" property="day31"/>
+<Value name="lessThanOne" failure="true"/>
+<Value name="moreThanThirtyOne" failure="true"/>
+</Var>
+</Input>
+</Function>
+</System>

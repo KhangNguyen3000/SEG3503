@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<TestCases system="csv2html">
+  <Function name="CSVToHTML">
+    <TestCase id="0">
+      <Has name="properties" value="EntreGuillemetsDouble,sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="null"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientVirgule"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="1">
+      <Has name="properties" value="EntreGuillemetsDouble,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="Utf-8"/>
+        <Var name="CssClasses.size" value="size&gt;0"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientGuillemetsDouble"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="2">
+      <Has name="properties" value="validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="null"/>
+        <Var name="Encoding.type" value="Windows-1252"/>
+        <Var name="CssClasses.size" value="size&gt;0"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="SimplementEntreVirgule"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="3">
+      <Has name="properties" value="EntreGuillemetsDouble,sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="null"/>
+        <Var name="Encoding.type" value="Utf-8"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientGuillemetsDouble"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="4">
+      <Has name="properties" value="EntreGuillemetsDouble,sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientVirgule"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="5">
+      <Has name="properties" value="sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="Windows-1252"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="SimplementEntreVirgule"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="6">
+      <Has name="properties" value="EntreGuillemetsDouble,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="null"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="size&gt;0"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientGuillemetsDouble"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="7">
+      <Has name="properties" value="sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="size&gt;0"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="SimplementEntreVirgule"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="8">
+      <Has name="properties" value="EntreGuillemetsDouble,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="null"/>
+        <Var name="Encoding.type" value="Utf-8"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientVirgule"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="9">
+      <Has name="properties" value="validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="Utf-8"/>
+        <Var name="CssClasses.size" value="size&gt;0"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="SimplementEntreVirgule"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="10">
+      <Has name="properties" value="EntreGuillemetsDouble,sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="Windows-1252"/>
+        <Var name="CssClasses.size" value="size&gt;0"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientVirgule"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="11">
+      <Has name="properties" value="EntreGuillemetsDouble,sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="Windows-1252"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="true"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="ContientGuillemetsDouble"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="12">
+      <Has name="properties" value="EntreGuillemetsDouble,sanscomentaire,validInputName"/>
+      <Input type="arg">
+        <Var name="infilename.extension" value="File is csv"/>
+        <Var name="OutFilename.name" value="null"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="true"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="EntreGuillemetsDouble"/>
+        <Var name="CSVFile.PremiereLigne" value="sanscomentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="13" failure="true">
+      <Input type="arg">
+        <Var name="infilename.extension" value="null" failure="true"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="SimplementEntreVirgule"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+    <TestCase id="14" failure="true">
+      <Input type="arg">
+        <Var name="infilename.extension" value="File not csv" failure="true"/>
+        <Var name="OutFilename.name" value="name-specified"/>
+        <Var name="Encoding.type" value="null"/>
+        <Var name="CssClasses.size" value="null"/>
+        <Var name="CompleteHtml.value" value="false"/>
+        <Var name="Header.Hasheader" value="false"/>
+        <Var name="CSVFile.ComptenuDesChamps" value="Contient tout autre carachtere"/>
+        <Var name="CSVFile.SeparationDesChamps" value="SimplementEntreVirgule"/>
+        <Var name="CSVFile.PremiereLigne" value="aUnComentaire"/>
+      </Input>
+    </TestCase>
+  </Function>
+</TestCases>

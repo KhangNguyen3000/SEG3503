@@ -1,0 +1,72 @@
+<System name="csv2html">
+<!-- Version: $Revision$ $csv2html$ -->
+	<Function name="CSVToHTML">
+
+		    <!-- 
+         Nextdate function :
+		Input:  month, day, year representing a date with 1 <= month <= 12,  1 <= day <= 31, year >= 0
+		Output: date of the day after the input date
+      -->
+    <Input type="arg">
+
+    	<VarSet name="infilename">
+    		<Var name="extension">
+    			<Value name="null" failure="true"/>
+    			<Value name="File not csv" failure="true"/>
+    			<Value name="File is csv" property="validInputName"/>
+    		</Var>
+        </VarSet>
+    	<VarSet name="OutFilename">
+    		<Var name="name">
+    			<Value name="null" when="validInputName"/>
+    			<Value name="name-specified"/>
+    		</Var>
+    	</VarSet>
+
+    	<VarSet name="Encoding">
+    		<Var name="type">
+    			<Value name="null"/>
+    			<Value name="Utf-8"/>
+    			<Value name="Windows-1252"/>
+    		</Var>
+    	</VarSet>
+
+    	<VarSet name="CssClasses">
+    		<Var name="size">
+    			<Value name="null"/>
+    			<Value name="size>0"/>
+    		</Var>
+    	</VarSet>
+
+    	<VarSet name="CompleteHtml">
+    		<Var name="value">
+    			<Value name="True"/>
+    			<Value name="False"/>
+    		</Var>
+    	</VarSet>
+
+    	<VarSet name="Header">
+    		<Var name="Hasheader">
+    			<Value name="True" when="sanscomentaire"/>
+    			<Value name="False"/>
+    		</Var>
+    	</VarSet>
+
+    	<VarSet name="CSVFile">
+    		<Var name="ComptenuDesChamps">
+    			<Value name="ContientVirgule" when="EntreGuillemetsDouble"/>
+    			<Value name="ContientGuillemetsDouble" when="EntreGuillemetsDouble"/>
+                <Value name="Contient tout autre carachtere"/>
+    		</Var>
+    		<Var name="SeparationDesChamps">
+    			<Value name="EntreGuillemetsDouble" property="EntreGuillemetsDouble"/>
+    			<Value name="SimplementEntreVirgule"/>
+    		</Var>
+    		<Var name="PremiereLigne">
+    			<Value name="aUnComentaire"/>
+    			<Value name="sanscomentaire" property="sanscomentaire"/>
+    		</Var>
+        </VarSet>
+    </Input>
+  </Function>
+</System>
